@@ -22,7 +22,7 @@ def user_input_features():
     ExitRates = st.sidebar.slider('Average exit rate from the pages visited', 0.0, 0.2, 0.0)
     PageValues = st.sidebar.slider('PageValues', 0.0, 400.0, 0.0)
     SpecialDay = st.sidebar.slider('Closeness of visit to a special day', 0.0, 1.0, 0.0, 0.1)
-    Month = st.sidebar.selectbox('Month', 1, 12, 1)
+    Month = st.sidebar.slider('Month', 1, 12, 1)
     OperatingSystems = st.sidebar.slider('OperatingSystems', 1, 8, 1)
     Browser = st.sidebar.slider('Browser', 1, 13, 1)
     Region = st.sidebar.slider('Region', 1, 9, 1)
